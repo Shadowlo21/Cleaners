@@ -185,5 +185,5 @@ void FivemClean() {
         if (system(command) != 0) {
         }
     }
-    MessageBoxA(0, skCrypt("Clean Done").decrypt(), skCrypt("Shadow").decrypt(), 0);
+    MessageBoxA(0, "Clean Done", "Shadow", 0);
 }
