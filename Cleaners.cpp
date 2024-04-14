@@ -7,9 +7,9 @@ int option;
 int Fnoption;
 void chooseer() {
 	system("cls");
-	Out(skCrypt("[1] Deep Clean Fn\n").decrypt());
-	Out(skCrypt("[2] Normal Clean Fn\n").decrypt());
-	Out(skCrypt("\n Clean -> ").decrypt());
+	Out("[1] Deep Clean Fn\n");
+	Out("[2] Normal Clean Fn\n");
+	Out("\n Clean -> ");
 	std::cin >> Fnoption;
 	switch (Fnoption)
 	{
@@ -24,12 +24,12 @@ void chooseer() {
 	}
 }
 int main() {
-	Out(skCrypt("[1] Clean Fivem\n").decrypt());
-	Out(skCrypt("[2] Clean Fortnite\n").decrypt());
-	Out(skCrypt("[3] Clean R6\n").decrypt());
-	Out(skCrypt("[4] Clean Valorant\n").decrypt());
-	Out(skCrypt("[5] Clean Cod\n").decrypt());
-	Out(skCrypt("\n Clean -> ").decrypt());
+	Out("[1] Clean Fivem\n");
+	Out("[2] Clean Fortnite\n");
+	Out("[3] Clean R6\n");
+	Out("[4] Clean Valorant\n");
+	Out("[5] Clean Cod\n");
+	Out("\n Clean -> ");
 	std::cin >> option;
 	switch (option)
 	{
