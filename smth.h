@@ -1,10 +1,8 @@
 #pragma once
 #include "iostream"
 #include "Windows.h"
-#include "Encryption/skStr.h"
-#include "Encryption/lazy.h"
 using namespace std;
-#define cmd(x) LI_FN(system)(x);
+#define cmd(x) system(x);
 #define Out(x) printf(x);
 const char* TaskKills[]{
 
@@ -29,11 +27,8 @@ const char* TaskKills[]{
 
 void killer() {
 	for (const auto& command : TaskKills) {
-		// Construct the TaskKill command string
 		std::string taskKillCommand = "TaskKill /F /IM " + std::string(command);
-		// Execute the command
 		if (system(taskKillCommand.c_str()) != 0) {
-			// Handle failure to kill process if needed
 		}
 	}
 }
